@@ -1,3 +1,15 @@
+$core-color-red: #F44336;
+
+$core-primary-text: black;
+
+$core-color-divider: rgba(0, 0, 0, 0.12);
+$core-color-hint-text: rgba(0, 0, 0, 0.26);
+$core-color-disabled-text: rgba(0, 0, 0, 0.26);
+$core-color-secondary-text: rgba(0, 0, 0, 0.54);
+$core-color-text: rgba(0, 0, 0, 0.87);
+
+$core-color-primary: $core-color-red;
+
 .no-select {
   -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -7,14 +19,20 @@
     user-select: none;
 }
 
-/* Put your css in here */
+.label {
+  @extend .no-select;
+  cursor: default;
+}
 
 .chips {
-  border: solid 1px grey;
+  
   overflow: auto;
   
   .chip-title {
-    color: rgba(0, 0, 0, 0.26) !important;
+    
+    @extend .label;
+    
+    color: $core-color-disabled-text;
     font-weight: 500;
     font-size: 16px;
     line-height: 16px;
@@ -23,33 +41,37 @@
     float: left;
     display: block;
   }
+  
+  .chip {
+    background: $core-color-divider;
+    
+    cursor: pointer;
+    
+    border-radius: 16px;  
+    margin: 8px 2px;
+    padding: 0px;
+    float: left;
+    display: block;
+  }
+  
+  .chip-text {
+    @extend .label;
+    
+    color: $core-color-secondary-text;
+    
+    line-height: 16px;
+    float: left;
+    display: block;
+    
+    margin: 8px 0px 8px 16px;
+  }
 }
 
-
-.chips .chip {
-  background: #EEEEEE;
+.chip-remove {
+  @extend .no-select;
   
-  cursor: pointer;
+  color: $core-color-secondary-text;
   
-  border-radius: 16px;  
-  margin: 8px 2px;
-  padding: 0px;
-  float: left;
-  display: block;
-}
-
-.chips .chip .chip-text {
-  color: rgba(0, 0, 0, 0.54);
-  
-  line-height: 16px;
-  float: left;
-  display: block;
-  
-  margin: 8px 0px 8px 16px;
-}
-
-a.chip-remove {
-  color: rgba(0, 0, 0, 0.54);
   font-size: 12px;
   text-decoration: none;
   cursor: pointer;
@@ -63,15 +85,16 @@ a.chip-remove {
   margin: 0px 0px 0px 8px;
   float: right;
   
-  
   display: block;
+  
+  &:hover {
+    background-color: $core-color-red;
+    color: white;
+    font-size: 10px;
+    text-decoration: none;
+  }
 }
 
-a.chip-remove:hover {
-  background-color: #F44336;
-  color: white;
-  font-size: 10px;
-}
 
 .chips input {
   line-height: 32px;
@@ -84,8 +107,8 @@ a.chip-remove:hover {
   float: left;
   display: block;
   width: 120px;
-}
-
-.chips input:focus {
-  outline: none;
+  
+  &:focus {
+    outline: none;  
+  }
 }
