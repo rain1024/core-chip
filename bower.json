@@ -4,8 +4,7 @@
   "main": [
     "init.js",
     "chip-edit.js",
-    "chip-edit-template.html",
-    "chip-style.css"
+    "chip-style.scss"
   ],
   "authors": [
     "Vu Anh <brother.rain.1024@gmail.com>"

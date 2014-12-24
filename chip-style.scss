@@ -1,20 +1,21 @@
-/* Put your css in here */
+* Put your css in here */
 
 .chips {
   border: solid 1px grey;
   overflow: auto;
+
+  .chip-title {
+    color: rgba(0, 0, 0, 0.26) !important;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    
+    margin: 16px 4px 0px 8px;
+    float: left;
+    display: block;
+  }
 }
 
-.chips .chip-title {
-  color: rgba(0, 0, 0, 0.26) !important;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 16px;
-  
-  margin: 16px 4px 0px 8px;
-  float: left;
-  display: block;
-}
 
 .chips .chip {
   background: #EEEEEE;
