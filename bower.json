@@ -12,7 +12,9 @@
   ],
   "description": "core chip",
   "keywords": [
-    "ui"
+    "ui",
+	"directive",
+	"material"
   ],
   "license": "MIT",
   "ignore": [
