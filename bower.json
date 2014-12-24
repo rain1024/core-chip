@@ -1,11 +1,11 @@
 {
   "name": "core-chip",
-  "version": "1.0.0",
-  "main" : [
-	  "init.js",
-	  "chip-edit.js",
-	  "chip-edit-template.html",
-	  "chip-style.css"
+  "version": "1.0.1",
+  "main": [
+    "init.js",
+    "chip-edit.js",
+    "chip-edit-template.html",
+    "chip-style.css"
   ],
   "authors": [
     "Vu Anh <brother.rain.1024@gmail.com>"
@@ -13,8 +13,8 @@
   "description": "core chip",
   "keywords": [
     "ui",
-	"directive",
-	"material"
+    "directive",
+    "material"
   ],
   "license": "MIT",
   "ignore": [
