@@ -1,0 +1,19 @@
+{
+  "name": "core-chip",
+  "version": "1.0.0",
+  "authors": [
+    "Vu Anh <brother.rain.1024@gmail.com>"
+  ],
+  "description": "core chip",
+  "keywords": [
+    "ui"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

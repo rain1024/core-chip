@@ -1,0 +1,78 @@
+/* Put your css in here */
+
+.chips {
+  border: solid 1px grey;
+  overflow: auto;
+}
+
+.chips .chip-title {
+  color: rgba(0, 0, 0, 0.26) !important;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  
+  margin: 16px 4px 0px 8px;
+  float: left;
+  display: block;
+}
+
+.chips .chip .chip-text {
+  color: rgba(255, 255, 255, 0.7);
+  
+  line-height: 16px;
+  float: left;
+  display: block;
+}
+
+.chips .chip {
+  background: #3F51Bf;
+  
+  cursor: pointer;
+  
+  margin: 8px 2px;
+  padding: 8px 0px 8px 8px;
+  float: left;
+  display: block;
+}
+
+
+a.chip-remove {
+  color: rgba(255, 255, 255, 0.54);
+  font-size: 12px;
+  text-decoration: none;
+  cursor: pointer;
+  
+  width: 16px;
+  line-height: 16px;
+  height: 16px;
+  text-align: center;
+  border-radius: 8px;
+  margin: 0px 2px 0px 4px;
+  float: right;
+  
+  
+  display: block;
+}
+
+a.chip-remove:hover {
+  background-color: white;
+  color: grey;
+  font-size: 10px;
+}
+
+.chips input {
+  line-height: 32px;
+  font-size: 16px;
+  padding: 8px;
+  width: 120px;
+  
+  border: none;
+  
+  float: left;
+  display: block;
+  width: 120px;
+}
+
+.chips input:focus {
+  outline: none;
+}
