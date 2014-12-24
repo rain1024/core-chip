@@ -5,15 +5,14 @@ core.directive('chipEdit', function(){
       chips : '=ngModel'
     },
     restrict: 'AE',
-    templateUrl : 'chip-edit-template.html',
+    templateUrl : 'bower_components/core-chip/chip-edit-template.html',
     link : function(scope, element, attrs, ngModelCtrl){
       scope.add = function(chip){
-        alert("add");
-        scope.input.push(chip);
+        scope.chips.push(chip);
         scope.chip = "";
       }
       scope.remove = function(chip){
-        scope.input = _.without(scope.input, chip);
+        scope.chips = _.without(scope.chips, chip);
       }
     }
   }

@@ -5,7 +5,6 @@
   "main": [
     "init.js",
     "chip-edit.js",
-    "chip-edit-template.html",
     "chip-style.css"
   ],
   "scripts": {
