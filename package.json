@@ -1,0 +1,27 @@
+{
+  "name": "core-chip",
+  "version": "1.0.1",
+  "description": "core chip",
+  "main": [
+    "init.js",
+    "chip-edit.js",
+    "chip-edit-template.html",
+    "chip-style.css"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rain1024/core-chip.git"
+  },
+  "keywords": [
+    "core",
+    "ui"
+  ],
+  "author": "Brother Rain <brother.rain.1024@gmail.com>",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/rain1024/core-chip/issues"
+  }
+}
