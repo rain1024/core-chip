@@ -1,10 +1,8 @@
-* Put your css in here */
-
 .chips {
   border: solid 1px grey;
   overflow: auto;
 
-  .chip-title {
+  &.chip-title {
     color: rgba(0, 0, 0, 0.26) !important;
     font-weight: 500;
     font-size: 16px;
@@ -14,19 +12,18 @@
     float: left;
     display: block;
   }
-}
 
-
-.chips .chip {
-  background: #EEEEEE;
-  
-  cursor: pointer;
-  
-  border-radius: 16px;  
-  margin: 8px 2px;
-  padding: 0px;
-  float: left;
-  display: block;
+  &.chip {
+    background: #EEEEEE;
+    
+    cursor: pointer;
+    
+    border-radius: 16px;  
+    margin: 8px 2px;
+    padding: 0px;
+    float: left;
+    display: block;
+  }
 }
 
 .chips .chip .chip-text {
