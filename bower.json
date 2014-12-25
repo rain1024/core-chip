@@ -1,0 +1,27 @@
+{
+  "name": "core-chip",
+  "version": "1.0.9",
+  "main": [
+    "init.js",
+    "chip-edit.js",
+    "chip-style.scss"
+  ],
+  "authors": [
+    "Vu Anh <brother.rain.1024@gmail.com>"
+  ],
+  "description": "core chip",
+  "keywords": [
+    "ui",
+    "directive",
+    "material"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "docs",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
