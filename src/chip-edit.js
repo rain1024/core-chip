@@ -38,7 +38,17 @@ core.directive('chipEdit', function(){
       chips : '=ngModel'
     },
     restrict: 'AE',
-    templateUrl : 'bower_components/core-chip/src/chip-edit-template.html',
+    template:
+      '<div class="chips">' + 
+        '<div class="chip-title">Tag: </div>' + 
+        '<div class="chip" ng-repeat="chip in chips track by $index">' + 
+        '<span class="chip-text">{{ chip }}</span>' +
+        '<a ng-show="isEdit" class="chip-remove" ng-click="remove(chip)">x</a>' +
+        '</div>' +
+        '<input ng-show="isEdit" id="chip-input" ng-model="chip"' +
+          'placeholder="add new tag"' + 
+          'ng-keyup="$event.keyCode == 13 ? add(chip) : null" />' +
+      '</div>',
     link : function(scope, element, attrs, ngModelCtrl){
       scope.isEdit = _.has(attrs.$attr, "edit")
       if(!_.isArray(scope.chips)) scope.chips = [];
