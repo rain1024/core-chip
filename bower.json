@@ -1,6 +1,6 @@
 {
   "name": "core-chip",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "main": [
     "src/init.js",
     "src/chip-edit.js",
