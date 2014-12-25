@@ -17,7 +17,7 @@ module.exports = function (grunt) {
     watch: {
       all : {
         files : ['src/*.js'],
-        tasks : ['clean', 'ngdocs', 'connect']
+        tasks : ['clean', 'ngdocs']
       },
       options: {livereload: true }
     },

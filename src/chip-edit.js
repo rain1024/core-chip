@@ -12,16 +12,24 @@
  * create base chip component 
  *
  * @example
- <example module="core">
-	 <file name="index.html">
-	 <div ng-controller="">
-    hihi
-	 </div>
-	 </file>
-	 <file name="script.js">
-     var a = 5;
-	 </file>
- </example>
+<example module="core">
+  <file name="index.html">
+    <div ng-controller="Controller">
+      <h1>Chip Directive</h1>
+      <h3>Input</h3>
+      {{ input }}
+      <hr/>
+      <h3>Output</h3>
+      <div chip-edit ng-model="input"></div>
+    </div>
+  </file>
+  <file name="script.js">
+    angular.module('example', [])
+    .controller('Controller', ['$scope', function($scope) {
+      $scope.input = ['1', '2', '3'];
+    }]);
+  </file>
+</example>
  */
 core.directive('chipEdit', function(){
   return {

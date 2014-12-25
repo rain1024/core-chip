@@ -23,18 +23,26 @@
 <div class="tabbable"><div class="tab-pane" title="index.html">
 <pre class="prettyprint linenums" ng-set-text="index.html" ng-html-wrap-loaded="core angular.js script.js"></pre>
 <script type="text/ng-template" id="index.html">
-<div ng-controller="">
-  hihi
-</div>
+  <div ng-controller="Controller">
+    <h3 id="example_chip-directive">Chip Directive</h3>
+    <h5 id="example_chip-directive_input">Input</h5>
+    {{ input }}
+    <hr/>
+    <h5 id="example_chip-directive_output">Output</h5>
+    <div chip-edit ng-model="input"></div>
+  </div>
 </script>
 </div>
 <div class="tab-pane" title="script.js">
 <pre class="prettyprint linenums" ng-set-text="script.js"></pre>
 <script type="text/ng-template" id="script.js">
-   var a = 5;
+  angular.module('example', [])
+  .controller('Controller', ['$scope', function($scope) {
+    $scope.input = ['1', '2', '3'];
+  }]);
 </script>
 </div>
-</div><h4 id="example_demo">Demo</h4>
+</div><h4 id="example_chip-directive_demo">Demo</h4>
 <div class="well doc-example-live animate-container" ng-embed-app="core" ng-set-html="index.html" ng-eval-javascript="script.js"></div>
 </div></div>
 </div>

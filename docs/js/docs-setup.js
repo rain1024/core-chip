@@ -1,7 +1,6 @@
 NG_DOCS={
   "sections": {
-    "api": "API Documentation",
-    "scripts": "API Documentation"
+    "api": "API Documentation"
   },
   "pages": [
     {
@@ -19,12 +18,11 @@ NG_DOCS={
       "type": "directive",
       "moduleName": "core",
       "shortDescription": "create base chip component ",
-      "keywords": "api base chip component core create directive hihi html js model module ng-controller ng-model script underscore var"
+      "keywords": "$scope angular api base chip chip-edit component controller core create directive example function html input js model module ng-controller ng-model script underscore"
     }
   ],
   "apis": {
-    "api": true,
-    "scripts": false
+    "api": true
   },
   "html5Mode": false,
   "editExample": true,
