@@ -41,7 +41,8 @@ core.directive('chipEdit', function(){
     templateUrl : 'bower_components/core-chip/src/chip-edit-template.html',
     link : function(scope, element, attrs, ngModelCtrl){
       scope.isEdit = _.has(attrs.$attr, "edit")
-      console.log(scope.isEdit);
+      if(!_.isArray(scope.chips)) scope.chips = [];
+
       scope.add = function(chip){
         scope.chips.push(chip);
         scope.chip = "";
