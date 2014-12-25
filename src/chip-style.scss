@@ -64,6 +64,7 @@ $core-color-primary: $core-color-red;
     display: block;
     
     margin: 8px 0px 8px 16px;
+	padding: 0px;
   }
 }
 
@@ -97,10 +98,10 @@ $core-color-primary: $core-color-red;
 
 
 .chips input {
-  line-height: 32px;
+  line-height: 16px !important;
   font-size: 16px;
-  padding: 8px;
-  width: 120px;
+  padding: 0px;
+  width: 120px !important;
   
   border: none;
   
