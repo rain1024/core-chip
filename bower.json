@@ -2,9 +2,9 @@
   "name": "core-chip",
   "version": "1.0.9",
   "main": [
-    "init.js",
-    "chip-edit.js",
-    "chip-style.scss"
+    "src/init.js",
+    "src/chip-edit.js",
+    "src/chip-style.scss"
   ],
   "authors": [
     "Vu Anh <brother.rain.1024@gmail.com>"
