@@ -38,7 +38,7 @@ core.directive('chipEdit', function(){
       chips : '=ngModel'
     },
     restrict: 'AE',
-    templateUrl : 'bower_components/core-chip/chip-edit-template.html',
+    templateUrl : 'bower_components/core-chip/src/chip-edit-template.html',
     link : function(scope, element, attrs, ngModelCtrl){
       scope.isEdit = _.has(attrs.$attr, "edit")
       console.log(scope.isEdit);
