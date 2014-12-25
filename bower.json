@@ -1,6 +1,6 @@
 {
   "name": "core-chip",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "main": [
     "init.js",
     "chip-edit.js",
@@ -19,7 +19,7 @@
   "ignore": [
     "**/.*",
     "node_modules",
-	"docs",
+    "docs",
     "bower_components",
     "test",
     "tests"
