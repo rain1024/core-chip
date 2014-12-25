@@ -1,5 +1,0 @@
-## Core Chip
-
-### Requirements
-
-* underscore
