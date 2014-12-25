@@ -1,3 +1,28 @@
+/**
+ * @ngdoc directive
+ * @name core.directive:chipEdit
+ *
+ * @param {object} ng-model model
+ *
+ * @requires underscore
+ *
+ * @function
+ *
+ * @description
+ * create base chip component 
+ *
+ * @example
+ <example module="core">
+	 <file name="index.html">
+	 <div ng-controller="">
+    hihi
+	 </div>
+	 </file>
+	 <file name="script.js">
+     var a = 5;
+	 </file>
+ </example>
+ */
 core.directive('chipEdit', function(){
   return {
     require : 'ngModel',  
