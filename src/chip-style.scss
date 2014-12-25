@@ -38,6 +38,7 @@ $core-color-primary: $core-color-red;
     line-height: 16px;
     
     margin: 16px 4px 0px 8px;
+	padding: 0px;
     float: left;
     display: block;
   }
@@ -48,6 +49,7 @@ $core-color-primary: $core-color-red;
     cursor: pointer;
     
     border-radius: 16px;  
+
     margin: 8px 2px;
     padding: 0px;
     float: left;
@@ -101,15 +103,17 @@ $core-color-primary: $core-color-red;
 .chips input {
   line-height: 32px;
   font-size: 16px;
-  padding: 8px;
+
+  margin: 8px 0px;
+  padding: 0px;
 
   width: 120px !important;
+  height: 32px !important;
   
   border: none;
   
   float: left;
   display: block;
-  width: 120px;
   
   &:focus {
     outline: none;  
